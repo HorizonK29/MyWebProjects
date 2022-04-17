@@ -1,0 +1,91 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');  
+ 
+ *{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: lightgray
+  ;
+}
+
+body{
+  font-family: "Nunito",sans-serif;
+  /* background: #f8f8f8; */
+  margin: 0;  
+   font-family: "Poppins", sans-serif;  
+   background-color: linear-gradiet(300deg, #757b87, #909d9d);  
+   display: flex;  
+   justify-content: center;  
+   align-items: center;  
+   min-height: 100vh;  
+   flex-direction: column; 
+}
+
+.input{
+  text-align: center;
+  margin: 100px auto;
+  padding: 1rem;  
+   border-radius: 25px;  
+   border: none;  
+   background-color: #fff;  
+   font-family: inherit;  
+   box-shadow: 0 4px 10px rgba(0,0,0,0.2);  
+   /* min-width: 300px;   */
+   font-size: 1rem;  
+}
+
+input[type="submit"]{
+  padding: 15px 30px;
+  background: #e7e7e7;
+  border: none; 
+   border: #e7e7e7 solid 1px;
+  border-radius: 20px;
+  font-family: "Nunito",sans-serif;
+  font-weight:bold;
+  font-size: 20px;
+  
+}
+
+.input input[type="text"]{
+  width: 600px;
+  height: 55px;
+  padding: 5px 10px;
+  background: #e7e7e7;  border: #e7e7e7 solid 1px;
+  /* border: none; */
+  border-radius: 20px;
+  font-family: "Nunito",sans-serif;
+  font-weight:bold;
+  font-size: 20px;
+}
+
+.card{
+  width: 100%;
+  background: #aca6a6;
+  height: 40vh;
+  margin: 50px auto;
+  border: #757070 solid 1px;
+  border-radius: 2px;
+
+}
+.container{
+
+}
+
+.close{
+  float: right;
+  margin-top: -2px;
+  cursor: pointer;
+  margin-right: 20px;
+  background-image: url(./images/02d.png);
+}
+
+.card h1{
+  padding: 5px 0;
+  text-align: center;
+}
+
+.card p{
+  text-align: center;
+  margin:40px 0;
+  font-size:20px;
+}
