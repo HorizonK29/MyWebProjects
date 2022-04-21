@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swppaing 2 Variables</title>
+</head>
+<style>
+    body{
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+div{
+    border: 4px solid black;
+    background-color:rgb(85, 24, 184) ;
+}
+</style>
+
+<body>
+
+    <br>
+    <div class="container">
+        <p><input type="text" id="first-text" /></p>
+<br>
+        <button onClick="swapElements()">Switch</button>&nbsp;&nbsp;
+        <button onClick="clearText()">Clear</button>
+<br>
+        <p><input type="text" id="second-text" /></p>
+    </div>
+
+    <script>
+        function swapElements() {
+            var x = document.getElementById('first-text').value;
+            var y = document.getElementById('second-text').value;
+            [x, y] = [y, x];
+
+            // Save the swapped values to the input element.
+            document.getElementById('first-text').value = x;
+            document.getElementById('second-text').value = y;
+        }
+
+        function clearText() {
+            document.getElementById('first-text').value = '';
+            document.getElementById('second-text').value = '';
+        }
+
+
+    </script>
+</body>
+
+</html>
