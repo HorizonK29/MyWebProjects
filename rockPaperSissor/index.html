@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROCK PAPER SCISSORS</title>
+</head>
+<style>
+    body {
+  text-align: center;
+}
+.container {
+  margin: 0 auto;
+  background-color: rgba(60, 71, 67, 0.788);
+  border-radius: 20px;
+  padding: 25px 50px;
+  width: 80vw;
+}
+.action {
+  max-width: 800px;
+  padding: 40px 0;
+  margin: 0 auto;
+  background-color: cadetblue;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 20px;
+}
+img{
+ border-radius: 50%;
+
+}
+.options {
+  flex: 1 1 30%;
+  border-radius: 50%;
+  border-width: 4px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  width: 100%;
+  max-width: 120px;
+}
+.display-moves {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.move {
+  border-radius: 50%;
+  border-width: 4px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.7);
+}
+
+</style>
+<body>
+    <div class="container">
+      <h1>The Rock Paper Scissors Game</h1>
+      <h2>Win five rounds to be the victor</h2>
+      <h2>
+        Player <span >0</span> - <span >0</span> Computer
+      </h2>
+      <div class="display-moves">
+        <div class="move">
+          <img id="player-move" src="./rock.png">
+        </div>
+        <!-- <div class="separator">VS</div> -->
+       <h1>&tbrk; VS &tbrk;</h1> 
+        <div class="move">
+          <img id="computer-move" src="./rock.png">
+        </div>
+      </div>
+      <h2>Click on the image below to select your move:<h2>
+      <div class="action">
+        <input class="options" type="image" src="./rock.png" value="Rock" />
+        <input class="options" type="image" src="./paper.png" value="Paper" />
+        <input class="options" type="image" src=".//scissor.png" value="Scissors" />
+      </div>
+    </div>
+  </body>
+  
+</html>

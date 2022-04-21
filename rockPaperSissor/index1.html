@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/6419bd10ad.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Calsi</title>
+  </head>
+  <style>
+      body {
+  width: 100%;
+  margin: 50px 500px;
+}
+button {
+  font-size: 40px;
+  width: 95px;
+  border-radius: 10px;
+  margin: 2px;
+  border: none;
+  filter: drop-shadow(1px 1px 2px grey);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+input {
+  width: 405px;
+  height: 50px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: none;
+  filter: drop-shadow(1px 1px 2px grey);
+}
+h1 {
+  margin: 50px 0px 0px 0px;
+}
+.calci {
+  text-align: center;
+  background-color: white;
+  width: 500px;
+  filter: drop-shadow(1px 1px 2px grey);
+  padding: 50px;
+  border-radius: 50px;
+}
+i {
+  color: white;
+}
+.arithmetic {
+  background-color: black;
+}
+input::placeholder {
+  font-size: 25px;
+  padding: 10px;
+  font-family: "Courier New", Courier, monospace;
+}
+input:focus {
+  background-color: rgb(197, 231, 231);
+}
+  </style>
+  <body>
+    <div class="calci">
+      <input placeholder="0" type="text" />
+      <br />
+      <button>AC</button>
+      <button class="arithmetic">
+        <i class="fa-solid fa-delete-left"></i>
+      </button>
+      <button class="arithmetic"><i class="fa-solid fa-percent"></i></button>
+      <button class="arithmetic"><i class="fa-solid fa-divide"></i></button>
+      <br />
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button class="arithmetic"><i class="fa-solid fa-xmark"></i></button>
+      <br />
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button class="arithmetic"><i class="fa-solid fa-minus"></i></button>
+      <br />
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button class="arithmetic"><i class="fa-solid fa-plus"></i></button>
+      <br />
+      <button>00</button>
+      <button>0</button>
+      <button>.</button>
+      <button class="arithmetic"><i class="fa-solid fa-equals"></i></button>
+    </div>
+  </body>
+</html>
