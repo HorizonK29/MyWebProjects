@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle popup button</title>
+</head>
+<style>
+body {
+
+    background: linear-gradient(to top left, #080808, #0c0c0c);
+    text-align: center;
+    height: 100vh;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 35px;
+}
+
+h1 {
+    background-color: rgb(253, 246, 246);
+    line-height: 1.3;
+    width: 100%;
+    text-align: center;
+    color: rgb(197, 15, 15);
+    border-radius: 20px;
+    padding-bottom: 10px;
+}
+
+button{
+    padding: 10px 30px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: transparent;
+    font-size: 30px;
+   
+}
+button:hover{
+    cursor: pointer;
+}
+button:active{
+    box-shadow: 0px 0px 0px;
+}
+.none{
+    display: none;
+    position: relative;
+    bottom: 50px
+}
+.initial{
+    display: initial;
+}
+.main{
+    margin-top: 10vh;
+}
+#display{
+    position: sticky;
+    top: 10vh;
+}
+img{
+    width: 200px;
+}
+
+
+
+
+</style>
+<body>
+    <div class="main">
+        <button id="showbtn" class="" onclick="showEvent();">Click here</button>
+        <div id="display" class="none">
+          🏷 
+            <h1>This page is not Secure to your Device .</h1>
+            <button onclick="closeEvent();" id="popupclose">Back to Home</button>
+        </div>
+    </div>
+
+    <script>
+
+
+
+function showEvent() {
+    var subs = document.getElementById("display");
+    var showbtn = document.getElementById("showbtn");
+    showbtn.classList.add("none");
+    subs.classList.add("initial");
+}
+function closeEvent() {
+    var subs = document.getElementById("display");
+    var showbtn = document.getElementById("showbtn");
+    showbtn.classList.remove("none");
+    subs.classList.remove("initial");
+}
+    </script>
+</body>
+</html>
